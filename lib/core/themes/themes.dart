@@ -30,7 +30,6 @@ class AppThemes {
   AppThemes.initialize() {
     final String themeModeData = GetStorage().read<String>('theme') ?? 'system';
     isDarkTheme = GetStorage().read<bool>('isDarkTheme') ?? false;
-    print(themeModeData);
     themeMode = ThemeMode.values.byName(themeModeData);
   }
 
